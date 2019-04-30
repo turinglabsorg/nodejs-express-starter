@@ -7,7 +7,7 @@ module Utilities {
 
   export class Parser {
 
-    public async body(req) {
+    public async body(req: express.Request) {
         return new Promise(response => {
             var jsonEmpty = true
             for (var key in req.body) {
